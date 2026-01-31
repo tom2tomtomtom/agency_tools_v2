@@ -1,0 +1,11 @@
+{
+  "name": "media-relations",
+  "title": "Media Relations",
+  "description": "Turn Claude into your PR expert. Get help with press releases, media pitches, journalist outreach, and earned media strategy.",
+  "version": "1.0.0",
+  "capabilities": {
+    "skills": true,
+    "commands": true,
+    "connectors": true
+  }
+}

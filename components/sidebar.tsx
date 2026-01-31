@@ -13,7 +13,8 @@ import {
   Home, 
   Search, 
   Star,
-  Users
+  Users,
+  Puzzle
 } from 'lucide-react';
 
 const teamIcons: Record<string, string> = {
@@ -75,6 +76,9 @@ export function Sidebar() {
             </NavLink>
             <NavLink href="/favorites" icon={<Star className="h-4 w-4" />} collapsed={collapsed} active={pathname === '/favorites'}>
               Favorites
+            </NavLink>
+            <NavLink href="/plugins" icon={<Puzzle className="h-4 w-4" />} collapsed={collapsed} active={pathname === '/plugins'}>
+              Cowork Plugins
             </NavLink>
 
             {/* Separator */}

@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-slack"],
+      "env": {
+        "SLACK_TOKEN": "${SLACK_TOKEN}"
+      },
+      "optional": true
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-notion"],
+      "env": {
+        "NOTION_TOKEN": "${NOTION_TOKEN}"
+      },
+      "optional": true
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-google-drive"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "${GOOGLE_CLIENT_ID}",
+        "GOOGLE_CLIENT_SECRET": "${GOOGLE_CLIENT_SECRET}"
+      },
+      "optional": true
+    }
+  }
+}

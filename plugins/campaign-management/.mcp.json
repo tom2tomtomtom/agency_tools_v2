@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-slack"],
+      "env": {
+        "SLACK_TOKEN": "${SLACK_TOKEN}"
+      },
+      "optional": true
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-notion"],
+      "env": {
+        "NOTION_TOKEN": "${NOTION_TOKEN}"
+      },
+      "optional": true
+    },
+    "asana": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-asana"],
+      "env": {
+        "ASANA_TOKEN": "${ASANA_TOKEN}"
+      },
+      "optional": true
+    }
+  }
+}

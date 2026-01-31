@@ -1,0 +1,11 @@
+{
+  "name": "campaign-management",
+  "title": "Campaign Management",
+  "description": "Turn Claude into your project management partner. Get help with timelines, status reports, resource planning, and keeping campaigns on track.",
+  "version": "1.0.0",
+  "capabilities": {
+    "skills": true,
+    "commands": true,
+    "connectors": true
+  }
+}

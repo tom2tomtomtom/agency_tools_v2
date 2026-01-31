@@ -1,0 +1,11 @@
+{
+  "name": "social-content",
+  "title": "Social & Content",
+  "description": "Turn Claude into your content strategist. Get help with social media content, content calendars, copywriting, and brand voice development.",
+  "version": "1.0.0",
+  "capabilities": {
+    "skills": true,
+    "commands": true,
+    "connectors": true
+  }
+}

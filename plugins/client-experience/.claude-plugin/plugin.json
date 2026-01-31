@@ -1,0 +1,11 @@
+{
+  "name": "client-experience",
+  "title": "Client Experience",
+  "description": "Turn Claude into your account management partner. Get help with meeting notes, proposals, client health monitoring, and strategic account planning.",
+  "version": "1.0.0",
+  "capabilities": {
+    "skills": true,
+    "commands": true,
+    "connectors": true
+  }
+}

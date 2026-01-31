@@ -1,0 +1,11 @@
+{
+  "name": "brand-strategy",
+  "title": "Brand Strategy",
+  "description": "Turn Claude into your brand strategist. Get help with positioning, competitive analysis, messaging frameworks, and brand architecture.",
+  "version": "1.0.0",
+  "capabilities": {
+    "skills": true,
+    "commands": true,
+    "connectors": true
+  }
+}

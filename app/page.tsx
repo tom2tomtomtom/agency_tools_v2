@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowRight, Sparkles, Zap, Users, FileText, Download, Monitor, Globe, Image } from 'lucide-react';
+import { ArrowRight, Sparkles, Zap, Users, FileText, Download, Monitor, Globe, Image, Puzzle } from 'lucide-react';
 
 const teamIcons: Record<string, string> = {
   'behavioural-science-team': '🧠',
@@ -43,6 +43,27 @@ export default function HomePage() {
           <StatCard icon={<Zap className="h-5 w-5" />} label="Tools" value="4 AI Tools" />
         </div>
       </div>
+
+      {/* Plugins CTA */}
+      <Card className="bg-gradient-to-r from-purple-500/10 via-purple-500/5 to-background border-purple-200">
+        <CardContent className="flex items-center justify-between py-6">
+          <div className="flex items-center gap-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100 text-purple-600">
+              <Puzzle className="h-6 w-6" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">New: Cowork Plugins</h3>
+              <p className="text-sm text-muted-foreground">Install once, use forever. Turn Claude into a specialist for your team.</p>
+            </div>
+          </div>
+          <Button asChild>
+            <Link href="/plugins">
+              Explore Plugins
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
 
       {/* Quick Start */}
       <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-background">
