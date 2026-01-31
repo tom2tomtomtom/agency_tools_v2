@@ -157,7 +157,7 @@ export default function PluginsPage() {
                 <div className="pt-2">
                   <Button className="w-full" variant="default" asChild>
                     <a 
-                      href={`https://github.com/yourusername/agency_tools_v2/tree/main/plugins/${plugin.slug}`}
+                      href={`https://github.com/tom2tomtomtom/agency_tools_v2/tree/main/plugins/${plugin.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
