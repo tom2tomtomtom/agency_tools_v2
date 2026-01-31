@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "AI Implementation Guide | PR & Communications Toolkit",
   description: "76+ AI prompts across 15 specialized teams for PR, communications, and brand strategy",
-  keywords: ["AI", "PR", "communications", "prompts", "Claude", "ChatGPT"],
+  keywords: ["AI", "PR", "communications", "prompts", "Claude", "Perplexity"],
 };
 
 export default function RootLayout({

@@ -275,7 +275,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
     "name": "Solution 2: Quality Assurance and Testing",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered development of QA processes, testing protocols, and quality control frameworks for project deliverables.",
     "knowledgeToUpload": [
       "Quality standards and acceptance criteria documents",
@@ -290,7 +290,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
     "name": "Solution 3: Stakeholder Communication and Reporting",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered creation of stakeholder communications, status reports, and project updates that keep everyone informed and aligned.",
     "knowledgeToUpload": [
       "Examples of project status reports you've created",
@@ -335,7 +335,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
     "name": "Solution 1: Meeting Notes Intelligence & Workshop Processing",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Cowork",
     "description": "Transform handwritten workshop notes, stakeholder interview recordings, and informal meeting content into organized digital summaries with automatic extraction of action items, decisions, and strategic insights.",
     "knowledgeToUpload": [
       "Examples of well-formatted meeting notes and client summaries",
@@ -367,7 +367,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
     "name": "Solution 3: Dynamic Timeline & Resource Planning",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Cowork",
     "description": "Create intelligent project timelines that automatically recalculate when changes occur, integrate team availability, and provide realistic scheduling that accounts for client constraints and approval cycles.",
     "knowledgeToUpload": [
       "Successful project timeline templates by engagement type",
@@ -383,7 +383,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
     "name": "Solution 4: Client Health Monitoring & Risk Prevention",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Perplexity",
     "description": "Monitor client relationship health through communication patterns, engagement metrics, and satisfaction indicators to predict potential issues and recommend proactive interventions before problems escalate.",
     "knowledgeToUpload": [
       "Client engagement patterns and communication frequency data",
@@ -399,7 +399,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
     "name": "Solution 5: Account Strategy & Growth Intelligence",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Perplexity",
     "description": "Generate strategic account plans and industry insights that position the CX team as strategic partners by providing fresh market intelligence, competitive analysis, and growth opportunities for client discussions.",
     "knowledgeToUpload": [
       "Current client portfolio and industry segment information",
@@ -491,7 +491,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
     "name": "Solution 5: Creative Review and Optimization",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered analysis and optimization of creative work to improve effectiveness and alignment with objectives.",
     "knowledgeToUpload": [
       "Creative work samples that need review or optimization",
@@ -776,7 +776,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
     "name": "Solution 3: Collaboration Management",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Project",
     "description": "AI-powered management of influencer and partner collaborations, ensuring smooth coordination and consistent stakeholder communication.",
     "knowledgeToUpload": [
       "Collaboration workflow templates and process documentation",
@@ -851,7 +851,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
     "name": "Solution 3: Performance Metrics and KPI Tracking",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Cowork",
     "description": "AI-powered analysis of performance metrics and KPIs to track progress, identify trends, and provide optimization recommendations.",
     "knowledgeToUpload": [
       "KPI dashboards and performance reports (3-5 recent examples)",
@@ -911,7 +911,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
     "name": "Solution 2: Goals/Strategy Tracking System",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of strategic documents and progress reports to track goals and provide insights on strategic alignment.",
     "knowledgeToUpload": [
       "Your company's strategic plan or VOST (Vision, Objectives, Strategies, Tactics) document",
@@ -926,7 +926,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
     "name": "Solution 3: Executive Communication Assistant",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered drafting and refinement of executive communications, including emails, presentations, and reports.",
     "knowledgeToUpload": [
       "Examples of your past executive communications (emails, memos, etc.)",
@@ -956,7 +956,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
     "name": "Solution 5: Strategic Initiative Management",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Project",
     "description": "AI-powered tracking and management of strategic initiatives to ensure alignment, progress, and successful execution.",
     "knowledgeToUpload": [
       "Your company's strategic initiative or project portfolio",
@@ -988,7 +988,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
     "name": "Solution 2: Maximising Available Content",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "Transform existing content into multiple formats optimized for different audiences and distribution channels across the sales and marketing funnel.",
     "knowledgeToUpload": [
       "Source content (Alt/Shift leadership insights, industry trend analysis, client success stories, campaign case studies)",
@@ -1005,7 +1005,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
     "name": "Solution 3: Database Foundation Cleanup",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Cowork",
     "description": "Clean, standardize, and organize the company's contact database to create the reliable foundation needed for effective lead scoring, marketing automation, and confident outreach campaigns.",
     "knowledgeToUpload": [
       "Sample contact database export (anonymized if needed)",
@@ -1038,7 +1038,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
     "name": "Solution 5: Brand Refresh Signal Detection",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Perplexity",
     "description": "Analyze target companies for indicators that suggest they may be ready for branding services, helping the sales team prioritize outreach and customize their approach.",
     "knowledgeToUpload": [
       "Examples of companies that hired your company (what signals they showed)",
@@ -1084,7 +1084,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
     "name": "Solution 3: Process Standardization and Quality Control",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered development of standardized processes and quality control systems to ensure consistency and excellence across all work.",
     "knowledgeToUpload": [
       "Current process documentation and workflow descriptions",
@@ -1241,7 +1241,7 @@ export const prompts: Prompt[] = [
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
     "name": "Solution 3: Copywriting and Content Creation",
-    "toolRecommendation": "Custom GPT",
+    "toolRecommendation": "Claude Skill",
     "description": "AI-powered copywriting and content creation for various marketing materials, ensuring brand consistency and audience engagement.",
     "knowledgeToUpload": [
       "Examples of high-performing copy from your campaigns",

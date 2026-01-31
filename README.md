@@ -13,7 +13,7 @@ A modern, searchable AI Implementation Guide for PR & Communications teams.
 - ⭐ **Favorites** - Save your most-used prompts locally
 - 🌙 **Dark Mode** - System-aware theme support
 - 📱 **Mobile Responsive** - Works great on all devices
-- 💬 **AI Chat Widget** - Get personalized recommendations (Claude or OpenAI)
+- 💬 **AI Chat Widget** - Get personalized recommendations (Claude or Perplexity)
 - 📋 **One-Click Copy** - Copy prompts with a single click
 - 🔗 **Open in Claude** - Deep links to start using prompts immediately
 

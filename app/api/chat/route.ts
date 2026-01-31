@@ -6,7 +6,7 @@ interface Message {
 }
 
 interface ChatRequest {
-  provider: 'openai' | 'anthropic';
+  provider: 'perplexity' | 'anthropic';
   apiKey: string;
   messages: Message[];
   systemPrompt: string;
@@ -54,15 +54,15 @@ export async function POST(request: NextRequest) {
         content: data.content?.[0]?.text || 'No response',
       });
     } else {
-      // OpenAI
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      // Perplexity
+      const response = await fetch('https://api.perplexity.ai/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: 'gpt-4o-mini',
+          model: 'sonar',
           max_tokens: 1024,
           messages: [
             { role: 'system', content: systemPrompt },
@@ -76,9 +76,9 @@ export async function POST(request: NextRequest) {
 
       if (!response.ok) {
         const error = await response.text();
-        console.error('OpenAI API error:', error);
+        console.error('Perplexity API error:', error);
         return NextResponse.json(
-          { error: 'Failed to get response from OpenAI. Please check your API key.' },
+          { error: 'Failed to get response from Perplexity. Please check your API key.' },
           { status: response.status }
         );
       }

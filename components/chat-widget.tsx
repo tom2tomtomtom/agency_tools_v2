@@ -17,7 +17,7 @@ interface Message {
 const API_KEY_STORAGE = 'ai-api-key';
 const API_PROVIDER_STORAGE = 'ai-api-provider';
 
-type Provider = 'openai' | 'anthropic';
+type Provider = 'perplexity' | 'anthropic';
 
 const SYSTEM_PROMPT = `You are an AI assistant for a PR & Communications toolkit with ${teams.length} specialized teams and ${prompts.length}+ AI prompts.
 
@@ -101,7 +101,7 @@ export function ChatWidget() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            provider: 'openai',
+            provider: 'perplexity',
             apiKey,
             messages: [...messages, { role: 'user', content: userMessage }],
             systemPrompt: SYSTEM_PROMPT,
@@ -224,16 +224,16 @@ export function ChatWidget() {
                         Claude
                       </Button>
                       <Button
-                        variant={provider === 'openai' ? 'default' : 'outline'}
+                        variant={provider === 'perplexity' ? 'default' : 'outline'}
                         size="sm"
-                        onClick={() => setProvider('openai')}
+                        onClick={() => setProvider('perplexity')}
                       >
-                        OpenAI
+                        Perplexity
                       </Button>
                     </div>
                     <Input
                       type="password"
-                      placeholder={provider === 'anthropic' ? 'sk-ant-...' : 'sk-...'}
+                      placeholder={provider === 'anthropic' ? 'sk-ant-...' : 'pplx-...'}
                       value={apiKey}
                       onChange={(e) => setApiKey(e.target.value)}
                     />

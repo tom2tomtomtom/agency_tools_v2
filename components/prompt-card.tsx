@@ -8,16 +8,40 @@ import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useAnalytics } from '@/hooks/use-analytics';
-import { 
-  ChevronDown, 
-  ChevronUp, 
-  Copy, 
-  Check, 
-  Star, 
+import {
+  ChevronDown,
+  ChevronUp,
+  Copy,
+  Check,
+  Star,
   ExternalLink,
-  BookOpen
+  BookOpen,
+  Download,
+  Monitor,
+  Globe,
+  Sparkles,
+  FileText
 } from 'lucide-react';
 import type { Prompt } from '@/lib/prompts';
+
+// Map prompt IDs to skill ZIP files
+const skillFiles: Record<string, string> = {
+  'campaign-management-team-2': 'qa-testing.zip',
+  'campaign-management-team-3': 'stakeholder-update.zip',
+  'creative-integrated-team-5': 'creative-review.zip',
+  'leadership-team-3': 'executive-comms.zip',
+  'operations-culture-team-3': 'process-docs.zip',
+  'social-content-team-3': 'copywriting.zip',
+  'new-business-team-2': 'content-transformer.zip',
+};
+
+// Tool badge styling
+const toolBadgeConfig: Record<string, { variant: 'default' | 'secondary' | 'outline' | 'destructive'; icon: React.ReactNode }> = {
+  'Claude Project': { variant: 'secondary', icon: <FileText className="h-3 w-3 mr-1" /> },
+  'Claude Skill': { variant: 'default', icon: <Sparkles className="h-3 w-3 mr-1" /> },
+  'Claude Cowork': { variant: 'outline', icon: <Monitor className="h-3 w-3 mr-1" /> },
+  'Perplexity': { variant: 'outline', icon: <Globe className="h-3 w-3 mr-1" /> },
+};
 
 interface PromptCardProps {
   prompt: Prompt;
@@ -95,13 +119,19 @@ export function PromptCard({ prompt }: PromptCardProps) {
 
           {/* Badges */}
           <div className="flex flex-wrap gap-2 mt-3">
-            <Badge variant="secondary">
+            <Badge variant={toolBadgeConfig[prompt.toolRecommendation]?.variant || 'secondary'} className="flex items-center">
+              {toolBadgeConfig[prompt.toolRecommendation]?.icon}
               {prompt.toolRecommendation}
             </Badge>
             {prompt.knowledgeToUpload.length > 0 && (
               <Badge variant="outline" className="gap-1">
                 <BookOpen className="h-3 w-3" />
                 {prompt.knowledgeToUpload.length} files recommended
+              </Badge>
+            )}
+            {prompt.toolRecommendation === 'Claude Cowork' && (
+              <Badge variant="outline" className="text-xs">
+                Requires Claude Desktop
               </Badge>
             )}
           </div>
@@ -138,6 +168,35 @@ export function PromptCard({ prompt }: PromptCardProps) {
                       {prompt.prompt}
                     </div>
                     
+                    {/* Tool-specific notes */}
+                    {prompt.toolRecommendation === 'Claude Skill' && skillFiles[prompt.id] && (
+                      <div className="mb-4 p-3 bg-primary/5 rounded-lg border border-primary/20">
+                        <p className="text-sm text-muted-foreground mb-2">
+                          <strong>Install as Skill:</strong> Download the ZIP, then go to Claude.ai → Settings → Capabilities → Upload Skill
+                        </p>
+                        <Button variant="outline" size="sm" asChild className="gap-2">
+                          <a href={`/skills/${skillFiles[prompt.id]}`} download>
+                            <Download className="h-4 w-4" />
+                            Download Skill ZIP
+                          </a>
+                        </Button>
+                      </div>
+                    )}
+                    {prompt.toolRecommendation === 'Claude Cowork' && (
+                      <div className="mb-4 p-3 bg-muted rounded-lg">
+                        <p className="text-sm text-muted-foreground">
+                          <strong>Use with Claude Desktop:</strong> Open Claude Desktop app on macOS, enable Cowork, and grant folder access. Install the Chrome extension for web capture and Gemini MCP for image generation.
+                        </p>
+                      </div>
+                    )}
+                    {prompt.toolRecommendation === 'Perplexity' && (
+                      <div className="mb-4 p-3 bg-muted rounded-lg">
+                        <p className="text-sm text-muted-foreground">
+                          <strong>Use with Perplexity:</strong> This prompt works best with real-time web search. Use at perplexity.ai or via the Perplexity API.
+                        </p>
+                      </div>
+                    )}
+
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-2 mt-4">
                       <Button onClick={handleCopy} className="gap-2">
@@ -153,12 +212,21 @@ export function PromptCard({ prompt }: PromptCardProps) {
                           </>
                         )}
                       </Button>
-                      <Button variant="outline" asChild className="gap-2">
-                        <a href={claudeUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4" />
-                          Open in Claude
-                        </a>
-                      </Button>
+                      {prompt.toolRecommendation === 'Perplexity' ? (
+                        <Button variant="outline" asChild className="gap-2">
+                          <a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                            Open Perplexity
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button variant="outline" asChild className="gap-2">
+                          <a href={claudeUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                            Open in Claude
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>

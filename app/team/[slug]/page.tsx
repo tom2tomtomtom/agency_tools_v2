@@ -71,7 +71,7 @@ export default async function TeamPage({ params }: Props) {
         </p>
         <div className="flex items-center gap-2">
           <Badge>{team.solutionCount} solutions</Badge>
-          <Badge variant="outline">Claude Projects & Custom GPTs</Badge>
+          <Badge variant="outline">Projects, Skills, Cowork & Perplexity</Badge>
         </div>
       </div>
 
