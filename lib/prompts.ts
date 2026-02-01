@@ -86,7 +86,7 @@ export const teams: Team[] = [
   },
   {
     "slug": "pr-media-relations-team",
-    "name": "Pr Media Relations Team",
+    "name": "PR Media Relations Team",
     "solutionCount": 5
   },
   {
@@ -134,7 +134,7 @@ export const prompts: Prompt[] = [
     "id": "behavioural-science-team-3",
     "teamSlug": "behavioural-science-team",
     "teamName": "Behavioural Science Team",
-    "name": "\udfe5 Public Health Behavior Communication Specialist",
+    "name": "Public Health Behavior Communication Specialist",
     "toolRecommendation": "Claude Project",
     "description": "Design health behavior change communications that overcome psychological barriers, address misinformation, and promote evidence-based health behaviors at population scale.",
     "knowledgeToUpload": [
@@ -184,7 +184,7 @@ export const prompts: Prompt[] = [
     "id": "brand-strategy-team-1",
     "teamSlug": "brand-strategy-team",
     "teamName": "Brand Strategy Team",
-    "name": "Solution 1: Brand Positioning Analysis",
+    "name": "Brand Positioning Analysis",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of brand positioning opportunities, competitive landscape assessment, and strategic positioning recommendations for government and enterprise clients.",
     "knowledgeToUpload": [
@@ -199,9 +199,9 @@ export const prompts: Prompt[] = [
     "id": "brand-strategy-team-2",
     "teamSlug": "brand-strategy-team",
     "teamName": "Brand Strategy Team",
-    "name": "Solution 2: Competitive Intelligence",
-    "toolRecommendation": "Claude Project",
-    "description": "AI-powered competitive intelligence gathering and analysis for government sector agencies and public affairs positioning.",
+    "name": "Competitive Intelligence Analyst",
+    "toolRecommendation": "Perplexity",
+    "description": "Use real-time web research to gather competitive intelligence, track competitor announcements, analyze market positioning, and identify strategic opportunities.",
     "knowledgeToUpload": [
       "Competitive agency profiles and capability summaries",
       "Industry reports and market analysis documents",
@@ -214,7 +214,7 @@ export const prompts: Prompt[] = [
     "id": "brand-strategy-team-3",
     "teamSlug": "brand-strategy-team",
     "teamName": "Brand Strategy Team",
-    "name": "Solution 3: Brand Architecture Design",
+    "name": "Brand Architecture Design",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of brand architecture frameworks that organize brand relationships and support government sector communication strategies.",
     "knowledgeToUpload": [
@@ -229,7 +229,7 @@ export const prompts: Prompt[] = [
     "id": "brand-strategy-team-4",
     "teamSlug": "brand-strategy-team",
     "teamName": "Brand Strategy Team",
-    "name": "Solution 4: Brand Equity Measurement",
+    "name": "Brand Equity Measurement",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of brand equity measurement frameworks tailored for government sector agencies and stakeholder relationships.",
     "knowledgeToUpload": [
@@ -244,7 +244,7 @@ export const prompts: Prompt[] = [
     "id": "brand-strategy-team-5",
     "teamSlug": "brand-strategy-team",
     "teamName": "Brand Strategy Team",
-    "name": "Solution 5: Brand Evolution Planning",
+    "name": "Brand Evolution Planning",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of strategic brand evolution plans that adapt to changing government priorities and market dynamics.",
     "knowledgeToUpload": [
@@ -259,7 +259,7 @@ export const prompts: Prompt[] = [
     "id": "campaign-management-team-1",
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
-    "name": "Solution 1: Project Planning and Management",
+    "name": "Project Planning & Management",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered project planning, timeline development, and resource allocation for complex implementation projects.",
     "knowledgeToUpload": [
@@ -274,7 +274,7 @@ export const prompts: Prompt[] = [
     "id": "campaign-management-team-2",
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
-    "name": "Solution 2: Quality Assurance and Testing",
+    "name": "Quality Assurance & Testing",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered development of QA processes, testing protocols, and quality control frameworks for project deliverables.",
     "knowledgeToUpload": [
@@ -289,7 +289,7 @@ export const prompts: Prompt[] = [
     "id": "campaign-management-team-3",
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
-    "name": "Solution 3: Stakeholder Communication and Reporting",
+    "name": "Stakeholder Communication & Reporting",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered creation of stakeholder communications, status reports, and project updates that keep everyone informed and aligned.",
     "knowledgeToUpload": [
@@ -304,7 +304,7 @@ export const prompts: Prompt[] = [
     "id": "campaign-management-team-4",
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
-    "name": "Solution 4: Process Documentation and Optimization",
+    "name": "Process Documentation & Optimization",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered documentation of implementation processes and identification of optimization opportunities for improved efficiency.",
     "knowledgeToUpload": [
@@ -319,7 +319,7 @@ export const prompts: Prompt[] = [
     "id": "campaign-management-team-5",
     "teamSlug": "campaign-management-team",
     "teamName": "Campaign Management Team",
-    "name": "Solution 5: Change Management and Training",
+    "name": "Change Management & Training",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of change management strategies and training programs to ensure successful adoption of new processes and systems.",
     "knowledgeToUpload": [
@@ -334,7 +334,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-1",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 1: Meeting Notes Intelligence & Workshop Processing",
+    "name": "Meeting Notes Intelligence & Workshop Processing",
     "toolRecommendation": "Claude Cowork",
     "description": "Transform handwritten workshop notes, stakeholder interview recordings, and informal meeting content into organized digital summaries with automatic extraction of action items, decisions, and strategic insights.",
     "knowledgeToUpload": [
@@ -350,7 +350,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-2",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 2: Content Discovery & Proposal Intelligence",
+    "name": "Content Discovery & Proposal Intelligence",
     "toolRecommendation": "Claude Project",
     "description": "Create an intelligent knowledge base of past proposals, case studies, and project materials that enables instant discovery of relevant examples, pricing strategies, and proven language for new opportunities.",
     "knowledgeToUpload": [
@@ -366,7 +366,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-3",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 3: Dynamic Timeline & Resource Planning",
+    "name": "Dynamic Timeline & Resource Planning",
     "toolRecommendation": "Claude Cowork",
     "description": "Create intelligent project timelines that automatically recalculate when changes occur, integrate team availability, and provide realistic scheduling that accounts for client constraints and approval cycles.",
     "knowledgeToUpload": [
@@ -382,7 +382,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-4",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 4: Client Health Monitoring & Risk Prevention",
+    "name": "Client Health Monitoring & Risk Prevention",
     "toolRecommendation": "Perplexity",
     "description": "Monitor client relationship health through communication patterns, engagement metrics, and satisfaction indicators to predict potential issues and recommend proactive interventions before problems escalate.",
     "knowledgeToUpload": [
@@ -398,7 +398,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-5",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 5: Account Strategy & Growth Intelligence",
+    "name": "Account Strategy & Growth Intelligence",
     "toolRecommendation": "Perplexity",
     "description": "Generate strategic account plans and industry insights that position the CX team as strategic partners by providing fresh market intelligence, competitive analysis, and growth opportunities for client discussions.",
     "knowledgeToUpload": [
@@ -414,7 +414,7 @@ export const prompts: Prompt[] = [
     "id": "client-experience-team-6",
     "teamSlug": "client-experience-team",
     "teamName": "Client Experience Team",
-    "name": "Solution 6: Comprehensive Client Knowledge Management",
+    "name": "Client Knowledge Management",
     "toolRecommendation": "Claude Project",
     "description": "Maintain comprehensive institutional knowledge about each client's history, preferences, stakeholder dynamics, and relationship evolution to enable seamless team transitions and personalized service delivery.",
     "knowledgeToUpload": [
@@ -430,7 +430,7 @@ export const prompts: Prompt[] = [
     "id": "creative-integrated-team-1",
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
-    "name": "Solution 1: Creative Concept Development",
+    "name": "Creative Concept Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered brainstorming and creative concept development for new campaigns, brand identities, and design projects.",
     "knowledgeToUpload": [
@@ -445,7 +445,7 @@ export const prompts: Prompt[] = [
     "id": "creative-integrated-team-2",
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
-    "name": "Solution 2: Brand Storytelling and Messaging",
+    "name": "Brand Storytelling & Messaging",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of compelling brand narratives and messaging frameworks that resonate with target audiences.",
     "knowledgeToUpload": [
@@ -460,7 +460,7 @@ export const prompts: Prompt[] = [
     "id": "creative-integrated-team-3",
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
-    "name": "Solution 3: Visual Identity Development",
+    "name": "Visual Identity Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered guidance for visual identity development, including logo concepts, color palettes, and design system recommendations.",
     "knowledgeToUpload": [
@@ -475,7 +475,7 @@ export const prompts: Prompt[] = [
     "id": "creative-integrated-team-4",
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
-    "name": "Solution 4: Campaign Creative Development",
+    "name": "Campaign Creative Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of integrated campaign creative across multiple channels and touchpoints.",
     "knowledgeToUpload": [
@@ -490,7 +490,7 @@ export const prompts: Prompt[] = [
     "id": "creative-integrated-team-5",
     "teamSlug": "creative-integrated-team",
     "teamName": "Creative Integrated Team",
-    "name": "Solution 5: Creative Review and Optimization",
+    "name": "Creative Review & Optimization",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered analysis and optimization of creative work to improve effectiveness and alignment with objectives.",
     "knowledgeToUpload": [
@@ -505,9 +505,9 @@ export const prompts: Prompt[] = [
     "id": "crisis-communications-team-1",
     "teamSlug": "crisis-communications-team",
     "teamName": "Crisis Communications Team",
-    "name": "\udea8 Crisis Monitoring & Early Warning Specialist",
-    "toolRecommendation": "Claude Project",
-    "description": "Implement comprehensive monitoring systems to detect potential crises early, analyze threat levels, and provide strategic intelligence for proactive crisis prevention and rapid response.",
+    "name": "Crisis Monitoring & Early Warning Specialist",
+    "toolRecommendation": "Perplexity",
+    "description": "Use real-time web search to detect potential crises early, analyze threat levels across news and social media, and provide strategic intelligence for proactive crisis prevention and rapid response.",
     "knowledgeToUpload": [
       "Historical crisis case studies and outcomes (government communications challenges, public health emergencies, safety incidents)",
       "Industry-specific risk factors and threat landscapes (government accountability pressures, public safety concerns, environmental incidents)",
@@ -556,7 +556,7 @@ export const prompts: Prompt[] = [
     "id": "crisis-communications-team-4",
     "teamSlug": "crisis-communications-team",
     "teamName": "Crisis Communications Team",
-    "name": "\udcfa Crisis Media Management & Relations Specialist",
+    "name": "Crisis Media Management & Relations Specialist",
     "toolRecommendation": "Claude Project",
     "description": "Manage media relationships and coverage during crisis situations, control narrative flow, and coordinate spokesperson activities to minimize negative coverage and maintain credible communication with journalists.",
     "knowledgeToUpload": [
@@ -654,7 +654,7 @@ export const prompts: Prompt[] = [
     "id": "events-experiential-team-5",
     "teamSlug": "events-experiential-team",
     "teamName": "Events Experiential Team",
-    "name": "\udd04 Post-Event Analysis & Optimization Manager",
+    "name": "Post-Event Analysis & Optimization Manager",
     "toolRecommendation": "Claude Project",
     "description": "Conduct comprehensive post-event analysis, capture learnings, and optimize future experiential marketing strategies through systematic evaluation and continuous improvement processes.",
     "knowledgeToUpload": [
@@ -670,7 +670,7 @@ export const prompts: Prompt[] = [
     "id": "government-relations-team-1",
     "teamSlug": "government-relations-team",
     "teamName": "Government Relations Team",
-    "name": "Solution 1: Stakeholder Mapping and Analysis",
+    "name": "Stakeholder Mapping & Analysis",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered mapping and analysis of government stakeholders, decision-makers, and influence networks to optimize engagement strategies for clients like TAC and Department of Health.",
     "knowledgeToUpload": [
@@ -685,7 +685,7 @@ export const prompts: Prompt[] = [
     "id": "government-relations-team-2",
     "teamSlug": "government-relations-team",
     "teamName": "Government Relations Team",
-    "name": "Solution 2: Policy Analysis and Communication",
+    "name": "Policy Analysis & Communication",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of policy initiatives and development of strategic communication approaches that resonate with stakeholders and support government objectives.",
     "knowledgeToUpload": [
@@ -700,7 +700,7 @@ export const prompts: Prompt[] = [
     "id": "government-relations-team-3",
     "teamSlug": "government-relations-team",
     "teamName": "Government Relations Team",
-    "name": "Solution 3: Regulatory Communication Strategy",
+    "name": "Regulatory Communication Strategy",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of regulatory communication strategies that ensure compliance, stakeholder understanding, and smooth implementation of regulatory changes.",
     "knowledgeToUpload": [
@@ -715,7 +715,7 @@ export const prompts: Prompt[] = [
     "id": "government-relations-team-4",
     "teamSlug": "government-relations-team",
     "teamName": "Government Relations Team",
-    "name": "Solution 4: Public Affairs Strategy",
+    "name": "Public Affairs Strategy",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of public affairs strategies that navigate political dynamics, build stakeholder coalitions, and advance government policy objectives.",
     "knowledgeToUpload": [
@@ -730,7 +730,7 @@ export const prompts: Prompt[] = [
     "id": "government-relations-team-5",
     "teamSlug": "government-relations-team",
     "teamName": "Government Relations Team",
-    "name": "Solution 5: Government Engagement and Relationship Building",
+    "name": "Government Engagement & Relationship Building",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of comprehensive government engagement strategies that build lasting relationships, enhance influence, and create sustainable partnerships across all levels of government.",
     "knowledgeToUpload": [
@@ -745,7 +745,7 @@ export const prompts: Prompt[] = [
     "id": "influencer-partnership-team-1",
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
-    "name": "Solution 1: Influencer Identification and Vetting",
+    "name": "Influencer Identification & Vetting",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered identification and vetting of influencers and thought leaders suitable for government sector campaigns and policy communications.",
     "knowledgeToUpload": [
@@ -760,7 +760,7 @@ export const prompts: Prompt[] = [
     "id": "influencer-partnership-team-2",
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
-    "name": "Solution 2: Partnership Strategy Development",
+    "name": "Partnership Strategy Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of strategic partnership frameworks that enhance government sector campaigns through authentic collaborations.",
     "knowledgeToUpload": [
@@ -775,7 +775,7 @@ export const prompts: Prompt[] = [
     "id": "influencer-partnership-team-3",
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
-    "name": "Solution 3: Collaboration Management",
+    "name": "Collaboration Management",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered management of influencer and partner collaborations, ensuring smooth coordination and consistent stakeholder communication.",
     "knowledgeToUpload": [
@@ -790,7 +790,7 @@ export const prompts: Prompt[] = [
     "id": "influencer-partnership-team-4",
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
-    "name": "Solution 4: Performance Tracking and Optimization",
+    "name": "Performance Tracking & Optimization",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered tracking and optimization of influencer and partnership performance, providing insights for continuous improvement and ROI maximization.",
     "knowledgeToUpload": [
@@ -805,7 +805,7 @@ export const prompts: Prompt[] = [
     "id": "influencer-partnership-team-5",
     "teamSlug": "influencer-partnership-team",
     "teamName": "Influencer Partnership Team",
-    "name": "Solution 5: Relationship Building and Maintenance",
+    "name": "Relationship Building & Maintenance",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of long-term relationship building strategies that create sustainable partnerships and influencer networks for government sector success.",
     "knowledgeToUpload": [
@@ -820,7 +820,7 @@ export const prompts: Prompt[] = [
     "id": "insights-measurement-team-1",
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
-    "name": "Solution 1: Data Analysis and Visualization",
+    "name": "Data Analysis & Visualization",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered data analysis with Python code generation for statistical analysis, data visualization, and insight extraction.",
     "knowledgeToUpload": [
@@ -835,7 +835,7 @@ export const prompts: Prompt[] = [
     "id": "insights-measurement-team-2",
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
-    "name": "Solution 2: Market Research Analysis",
+    "name": "Market Research Analysis",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of market research data, surveys, and customer feedback to extract strategic insights and recommendations.",
     "knowledgeToUpload": [
@@ -850,7 +850,7 @@ export const prompts: Prompt[] = [
     "id": "insights-measurement-team-3",
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
-    "name": "Solution 3: Performance Metrics and KPI Tracking",
+    "name": "Performance Metrics & KPI Tracking",
     "toolRecommendation": "Claude Cowork",
     "description": "AI-powered analysis of performance metrics and KPIs to track progress, identify trends, and provide optimization recommendations.",
     "knowledgeToUpload": [
@@ -865,7 +865,7 @@ export const prompts: Prompt[] = [
     "id": "insights-measurement-team-4",
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
-    "name": "Solution 4: Customer Behavior Analysis",
+    "name": "Customer Behavior Analysis",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of customer behavior data to understand patterns, preferences, and opportunities for engagement optimization.",
     "knowledgeToUpload": [
@@ -880,9 +880,9 @@ export const prompts: Prompt[] = [
     "id": "insights-measurement-team-5",
     "teamSlug": "insights-measurement-team",
     "teamName": "Insights Measurement Team",
-    "name": "Solution 5: Competitive Intelligence and Benchmarking",
-    "toolRecommendation": "Claude Project",
-    "description": "AI-powered competitive analysis and benchmarking to track competitor performance and identify market positioning opportunities.",
+    "name": "Competitive Intelligence & Benchmarking",
+    "toolRecommendation": "Perplexity",
+    "description": "Use real-time research to track competitor performance, analyze industry benchmarks, and identify market positioning opportunities with cited sources.",
     "knowledgeToUpload": [
       "Competitor performance data and market share information",
       "Industry benchmarks and comparative analysis reports",
@@ -895,7 +895,7 @@ export const prompts: Prompt[] = [
     "id": "leadership-team-1",
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
-    "name": "Solution 1: Meeting Documentation Automation",
+    "name": "Meeting Documentation Automation",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of meeting transcripts to generate summaries, action items, and follow-up communications.",
     "knowledgeToUpload": [
@@ -910,7 +910,7 @@ export const prompts: Prompt[] = [
     "id": "leadership-team-2",
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
-    "name": "Solution 2: Goals/Strategy Tracking System",
+    "name": "Goals & Strategy Tracking System",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis of strategic documents and progress reports to track goals and provide insights on strategic alignment.",
     "knowledgeToUpload": [
@@ -925,7 +925,7 @@ export const prompts: Prompt[] = [
     "id": "leadership-team-3",
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
-    "name": "Solution 3: Executive Communication Assistant",
+    "name": "Executive Communication Assistant",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered drafting and refinement of executive communications, including emails, presentations, and reports.",
     "knowledgeToUpload": [
@@ -940,7 +940,7 @@ export const prompts: Prompt[] = [
     "id": "leadership-team-4",
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
-    "name": "Solution 4: Board and Investor Reporting",
+    "name": "Board & Investor Reporting",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered analysis and synthesis of business data to create comprehensive board and investor reports.",
     "knowledgeToUpload": [
@@ -955,7 +955,7 @@ export const prompts: Prompt[] = [
     "id": "leadership-team-5",
     "teamSlug": "leadership-team",
     "teamName": "Leadership Team",
-    "name": "Solution 5: Strategic Initiative Management",
+    "name": "Strategic Initiative Management",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered tracking and management of strategic initiatives to ensure alignment, progress, and successful execution.",
     "knowledgeToUpload": [
@@ -970,7 +970,7 @@ export const prompts: Prompt[] = [
     "id": "new-business-team-1",
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
-    "name": "Solution 1: Knowledge Mining from SOWs & Proposals",
+    "name": "Knowledge Mining from SOWs & Proposals",
     "toolRecommendation": "Claude Project",
     "description": "Transform years of proposal documents, SOWs, and discovery phase materials into an instantly searchable knowledge base that provides strategic insights for new business development.",
     "knowledgeToUpload": [
@@ -987,7 +987,7 @@ export const prompts: Prompt[] = [
     "id": "new-business-team-2",
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
-    "name": "Solution 2: Maximising Available Content",
+    "name": "Content Repurposing & Maximization",
     "toolRecommendation": "Claude Skill",
     "description": "Transform existing content into multiple formats optimized for different audiences and distribution channels across the sales and marketing funnel.",
     "knowledgeToUpload": [
@@ -1004,7 +1004,7 @@ export const prompts: Prompt[] = [
     "id": "new-business-team-3",
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
-    "name": "Solution 3: Database Foundation Cleanup",
+    "name": "Database Foundation Cleanup",
     "toolRecommendation": "Claude Cowork",
     "description": "Clean, standardize, and organize the company's contact database to create the reliable foundation needed for effective lead scoring, marketing automation, and confident outreach campaigns.",
     "knowledgeToUpload": [
@@ -1020,7 +1020,7 @@ export const prompts: Prompt[] = [
     "id": "new-business-team-4",
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
-    "name": "Solution 4: Discovery Phase Intelligence Mining",
+    "name": "Discovery Phase Intelligence Mining",
     "toolRecommendation": "Claude Project",
     "description": "Extract and synthesize insights from discovery phase documentation to build competitive intelligence that strengthens every new business conversation and pitch.",
     "knowledgeToUpload": [
@@ -1037,7 +1037,7 @@ export const prompts: Prompt[] = [
     "id": "new-business-team-5",
     "teamSlug": "new-business-team",
     "teamName": "New Business Team",
-    "name": "Solution 5: Brand Refresh Signal Detection",
+    "name": "Brand Refresh Signal Detection",
     "toolRecommendation": "Perplexity",
     "description": "Analyze target companies for indicators that suggest they may be ready for branding services, helping the sales team prioritize outreach and customize their approach.",
     "knowledgeToUpload": [
@@ -1053,7 +1053,7 @@ export const prompts: Prompt[] = [
     "id": "operations-culture-team-1",
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
-    "name": "Solution 1: Knowledge Management and Documentation",
+    "name": "Knowledge Management & Documentation",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered organization and optimization of knowledge assets, creating searchable documentation systems and knowledge sharing frameworks.",
     "knowledgeToUpload": [
@@ -1068,7 +1068,7 @@ export const prompts: Prompt[] = [
     "id": "operations-culture-team-2",
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
-    "name": "Solution 2: Best Practices Development and Training",
+    "name": "Best Practices Development & Training",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of best practices documentation and training programs to standardize processes and improve team performance.",
     "knowledgeToUpload": [
@@ -1083,7 +1083,7 @@ export const prompts: Prompt[] = [
     "id": "operations-culture-team-3",
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
-    "name": "Solution 3: Process Standardization and Quality Control",
+    "name": "Process Standardization & Quality Control",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered development of standardized processes and quality control systems to ensure consistency and excellence across all work.",
     "knowledgeToUpload": [
@@ -1098,7 +1098,7 @@ export const prompts: Prompt[] = [
     "id": "operations-culture-team-4",
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
-    "name": "Solution 4: Information Security and Compliance",
+    "name": "Information Security & Compliance",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered monitoring and management of information security protocols and compliance requirements to protect sensitive data.",
     "knowledgeToUpload": [
@@ -1113,7 +1113,7 @@ export const prompts: Prompt[] = [
     "id": "operations-culture-team-5",
     "teamSlug": "operations-culture-team",
     "teamName": "Operations Culture Team",
-    "name": "Solution 5: Vendor and Technology Management",
+    "name": "Vendor & Technology Management",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered management of vendor relationships and technology solutions to ensure optimal performance and value.",
     "knowledgeToUpload": [
@@ -1127,10 +1127,10 @@ export const prompts: Prompt[] = [
   {
     "id": "pr-media-relations-team-1",
     "teamSlug": "pr-media-relations-team",
-    "teamName": "Pr Media Relations Team",
+    "teamName": "PR Media Relations Team",
     "name": "Media Monitoring & Sentiment Analyst",
-    "toolRecommendation": "Claude Project",
-    "description": "Transform raw media coverage into actionable intelligence with sentiment analysis, key message tracking, and competitive positioning insights.",
+    "toolRecommendation": "Perplexity",
+    "description": "Use real-time web search to transform media coverage into actionable intelligence with sentiment analysis, key message tracking, competitive positioning insights, and AI search visibility monitoring (GEO).",
     "knowledgeToUpload": [
       "Recent media coverage (travel industry coverage, retail announcements, consumer brand features)",
       "Brand messaging frameworks (tourism positioning, retail value propositions, consumer brand narratives)",
@@ -1144,10 +1144,10 @@ export const prompts: Prompt[] = [
   {
     "id": "pr-media-relations-team-2",
     "teamSlug": "pr-media-relations-team",
-    "teamName": "Pr Media Relations Team",
-    "name": "\udce7 Media Pitch & Press Release Creator",
+    "teamName": "PR Media Relations Team",
+    "name": "Media Pitch & Press Release Creator",
     "toolRecommendation": "Claude Project",
-    "description": "Craft compelling, newsworthy pitches and press releases that resonate with journalists and drive coverage for your stories.",
+    "description": "Craft authentic, personalized pitches that stand out from generic AI content. Focus on unique story angles and genuine journalist relationships to overcome 2026 AI pitch fatigue.",
     "knowledgeToUpload": [
       "Successful pitch examples and responses (TEQ destination stories, Intrepid adventure campaigns, Officeworks retail innovations)",
       "Media contact database and preferences (travel writers, retail journalists, consumer lifestyle media)",
@@ -1161,7 +1161,7 @@ export const prompts: Prompt[] = [
   {
     "id": "pr-media-relations-team-3",
     "teamSlug": "pr-media-relations-team",
-    "teamName": "Pr Media Relations Team",
+    "teamName": "PR Media Relations Team",
     "name": "Journalist Relationship & Database Manager",
     "toolRecommendation": "Claude Project",
     "description": "Build and maintain strong media relationships through intelligent contact management, interaction tracking, and personalized outreach strategies.",
@@ -1177,7 +1177,7 @@ export const prompts: Prompt[] = [
   {
     "id": "pr-media-relations-team-4",
     "teamSlug": "pr-media-relations-team",
-    "teamName": "Pr Media Relations Team",
+    "teamName": "PR Media Relations Team",
     "name": "Earned Media Campaign Strategist",
     "toolRecommendation": "Claude Project",
     "description": "Develop comprehensive earned media strategies that maximize coverage, build thought leadership, and drive business objectives through strategic PR planning.",
@@ -1193,7 +1193,7 @@ export const prompts: Prompt[] = [
   {
     "id": "pr-media-relations-team-5",
     "teamSlug": "pr-media-relations-team",
-    "teamName": "Pr Media Relations Team",
+    "teamName": "PR Media Relations Team",
     "name": "Press Conference & Media Event Coordinator",
     "toolRecommendation": "Claude Project",
     "description": "Plan and execute successful press conferences, media events, and news briefings that generate coverage and deliver key messages effectively.",
@@ -1210,7 +1210,7 @@ export const prompts: Prompt[] = [
     "id": "social-content-team-1",
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
-    "name": "Solution 1: Messaging Strategy Development",
+    "name": "Messaging Strategy Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of comprehensive messaging strategies that align with brand positioning and resonate with target audiences.",
     "knowledgeToUpload": [
@@ -1225,7 +1225,7 @@ export const prompts: Prompt[] = [
     "id": "social-content-team-2",
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
-    "name": "Solution 2: Content Strategy and Planning",
+    "name": "Content Strategy & Planning",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of content strategies and editorial calendars that support business objectives and audience engagement.",
     "knowledgeToUpload": [
@@ -1240,7 +1240,7 @@ export const prompts: Prompt[] = [
     "id": "social-content-team-3",
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
-    "name": "Solution 3: Copywriting and Content Creation",
+    "name": "Copywriting & Content Creation",
     "toolRecommendation": "Claude Skill",
     "description": "AI-powered copywriting and content creation for various marketing materials, ensuring brand consistency and audience engagement.",
     "knowledgeToUpload": [
@@ -1255,7 +1255,7 @@ export const prompts: Prompt[] = [
     "id": "social-content-team-4",
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
-    "name": "Solution 4: Brand Voice and Tone Development",
+    "name": "Brand Voice & Tone Development",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered development of brand voice and tone guidelines that ensure consistent, authentic communication across all touchpoints.",
     "knowledgeToUpload": [
@@ -1270,7 +1270,7 @@ export const prompts: Prompt[] = [
     "id": "social-content-team-5",
     "teamSlug": "social-content-team",
     "teamName": "Social Content Team",
-    "name": "Solution 5: Communication Audit and Optimization",
+    "name": "Communication Audit & Optimization",
     "toolRecommendation": "Claude Project",
     "description": "AI-powered audit of existing communications to identify inconsistencies, optimization opportunities, and alignment with brand strategy.",
     "knowledgeToUpload": [
