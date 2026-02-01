@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Sidebar } from "@/components/sidebar";
 import { CommandMenu } from "@/components/command-menu";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { ChatWidget } from "@/components/chat-widget";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -37,7 +38,10 @@ export default function RootLayout({
                   {/* Spacer for mobile menu button */}
                   <div className="w-10 md:hidden" />
                   <h1 className="text-lg md:text-xl font-semibold">AI Implementation Guide</h1>
-                  <CommandMenu />
+                  <div className="flex items-center gap-3">
+                    <CommandMenu />
+                    <ThemeToggle />
+                  </div>
                 </div>
               </header>
               <div className="p-4 md:p-6">
