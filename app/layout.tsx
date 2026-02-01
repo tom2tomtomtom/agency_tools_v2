@@ -31,14 +31,16 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen">
             <Sidebar />
-            <main className="flex-1 ml-64">
+            <main className="flex-1 ml-0 md:ml-64">
               <header className="sticky top-0 z-30 bg-background/80 backdrop-blur-sm border-b">
-                <div className="flex items-center justify-between px-6 h-16">
-                  <h1 className="text-xl font-semibold">AI Implementation Guide</h1>
+                <div className="flex items-center justify-between px-4 md:px-6 h-16">
+                  {/* Spacer for mobile menu button */}
+                  <div className="w-10 md:hidden" />
+                  <h1 className="text-lg md:text-xl font-semibold">AI Implementation Guide</h1>
                   <CommandMenu />
                 </div>
               </header>
-              <div className="p-6">
+              <div className="p-4 md:p-6">
                 {children}
               </div>
             </main>

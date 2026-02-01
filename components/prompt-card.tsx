@@ -153,6 +153,13 @@ export function PromptCard({ prompt }: PromptCardProps) {
               </Badge>
             )}
           </div>
+
+          {/* Prompt Preview - shown when collapsed */}
+          {!isOpen && (
+            <div className="mt-3 text-xs text-muted-foreground font-mono bg-muted/50 rounded px-2 py-1.5 line-clamp-2">
+              {prompt.prompt.slice(0, 150)}{prompt.prompt.length > 150 ? '...' : ''}
+            </div>
+          )}
         </CardHeader>
 
         <CollapsibleContent>

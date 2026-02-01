@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { teams, getTeamBySlug, getPromptsByTeam } from '@/lib/prompts';
-import { PromptCard } from '@/components/prompt-card';
+import { FilteredPromptList } from '@/components/filtered-prompt-list';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -75,12 +75,8 @@ export default async function TeamPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Prompts */}
-      <div className="space-y-4">
-        {teamPrompts.map(prompt => (
-          <PromptCard key={prompt.id} prompt={prompt} />
-        ))}
-      </div>
+      {/* Prompts with Filter */}
+      <FilteredPromptList prompts={teamPrompts} />
     </div>
   );
 }
