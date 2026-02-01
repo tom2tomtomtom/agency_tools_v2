@@ -31,14 +31,15 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
       {/* Hero */}
-      <div className="text-center space-y-4 py-8">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          AI Implementation Guide
+      <div className="text-center space-y-6 py-12">
+        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
+          AI Implementation
+          <span className="text-primary"> Guide</span>
         </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           The definitive PR & communications AI toolkit with {totalPrompts}+ prompts across {totalTeams} specialized teams
         </p>
-        <div className="flex items-center justify-center gap-4 pt-4">
+        <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
           <StatCard icon={<FileText className="h-5 w-5" />} label="Prompts" value={totalPrompts} />
           <StatCard icon={<Users className="h-5 w-5" />} label="Teams" value={totalTeams} />
           <StatCard icon={<Zap className="h-5 w-5" />} label="Tools" value="4 AI Tools" />
@@ -46,10 +47,10 @@ export default function HomePage() {
       </div>
 
       {/* Plugins CTA */}
-      <Card className="bg-gradient-to-r from-purple-500/10 via-purple-500/5 to-background border-purple-200">
-        <CardContent className="flex items-center justify-between py-6">
+      <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-background border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+        <CardContent className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6">
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100 text-purple-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Puzzle className="h-6 w-6" />
             </div>
             <div>
@@ -57,7 +58,7 @@ export default function HomePage() {
               <p className="text-sm text-muted-foreground">Install once, use forever. Turn Claude into a specialist for your team.</p>
             </div>
           </div>
-          <Button asChild>
+          <Button asChild className="w-full sm:w-auto">
             <Link href="/plugins">
               Explore Plugins
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -273,10 +274,10 @@ export default function HomePage() {
 
 function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string; value: string | number }) {
   return (
-    <div className="flex items-center gap-3 bg-muted rounded-lg px-4 py-2">
+    <div className="flex items-center gap-3 bg-card border border-border/50 rounded-xl px-5 py-3 shadow-sm">
       <div className="text-primary">{icon}</div>
       <div>
-        <div className="font-semibold">{value}</div>
+        <div className="font-semibold text-foreground">{value}</div>
         <div className="text-xs text-muted-foreground">{label}</div>
       </div>
     </div>

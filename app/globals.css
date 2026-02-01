@@ -37,82 +37,144 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Redbaez Warm - Custom radius scale */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-4xl: 32px;
+
+  /* Redbaez Warm - Custom shadows */
+  --shadow-soft: 0 2px 8px rgba(45, 52, 54, 0.08);
+  --shadow-medium: 0 4px 16px rgba(45, 52, 54, 0.12);
+  --shadow-large: 0 8px 32px rgba(45, 52, 54, 0.16);
 }
 
+/* ============================================
+   REDBAEZ WARM - Light Mode (Default)
+   Warm, friendly, approachable
+   ============================================ */
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.75rem;
+
+  /* Warm cream backgrounds */
+  --background: #FDFBF7;
+  --foreground: #2D3436;
+
+  /* Card backgrounds */
+  --card: #FFFFFF;
+  --card-foreground: #2D3436;
+
+  /* Popover */
+  --popover: #FFFFFF;
+  --popover-foreground: #2D3436;
+
+  /* Terra Cotta - Primary brand color */
+  --primary: #E07A5F;
+  --primary-foreground: #FFFFFF;
+
+  /* Warm sand - Secondary */
+  --secondary: #F5F0E8;
+  --secondary-foreground: #2D3436;
+
+  /* Muted warm tones */
+  --muted: #FAF7F2;
+  --muted-foreground: #636E72;
+
+  /* Accent - Clay rich */
+  --accent: #F5F0E8;
+  --accent-foreground: #2D3436;
+
+  /* Destructive stays warm red */
+  --destructive: #E07A5F;
+
+  /* Borders and inputs - Sand deep */
+  --border: #E8E2D9;
+  --input: #E8E2D9;
+
+  /* Focus ring - Terra cotta */
+  --ring: #E07A5F;
+
+  /* Charts - Warm palette */
+  --chart-1: #E07A5F;
+  --chart-2: #8AB17D;
+  --chart-3: #E9C46A;
+  --chart-4: #A8DADC;
+  --chart-5: #9C89B8;
+
+  /* Sidebar - Cream tones */
+  --sidebar: #FAF7F2;
+  --sidebar-foreground: #2D3436;
+  --sidebar-primary: #E07A5F;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F0E8;
+  --sidebar-accent-foreground: #2D3436;
+  --sidebar-border: #E8E2D9;
+  --sidebar-ring: #E07A5F;
 }
 
+/* ============================================
+   REDBAEZ WARM - Dark Mode
+   Still warm, but darker tones
+   ============================================ */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Deep warm backgrounds */
+  --background: #1A1816;
+  --foreground: #FAF7F2;
+
+  /* Card backgrounds - slightly lighter */
+  --card: #242220;
+  --card-foreground: #FAF7F2;
+
+  /* Popover */
+  --popover: #242220;
+  --popover-foreground: #FAF7F2;
+
+  /* Terra Cotta - slightly brighter for dark mode */
+  --primary: #E89A84;
+  --primary-foreground: #1A1816;
+
+  /* Dark sand */
+  --secondary: #2D2A28;
+  --secondary-foreground: #FAF7F2;
+
+  /* Muted dark tones */
+  --muted: #2D2A28;
+  --muted-foreground: #95A5A6;
+
+  /* Accent */
+  --accent: #2D2A28;
+  --accent-foreground: #FAF7F2;
+
+  /* Destructive */
+  --destructive: #E89A84;
+
+  /* Borders - warm dark */
+  --border: rgba(250, 247, 242, 0.1);
+  --input: rgba(250, 247, 242, 0.15);
+
+  /* Ring */
+  --ring: #E89A84;
+
+  /* Charts - Warm palette adjusted for dark */
+  --chart-1: #E89A84;
+  --chart-2: #9BC28E;
+  --chart-3: #F0D080;
+  --chart-4: #B8E4E6;
+  --chart-5: #AC99C8;
+
+  /* Sidebar - Dark warm tones */
+  --sidebar: #242220;
+  --sidebar-foreground: #FAF7F2;
+  --sidebar-primary: #E89A84;
+  --sidebar-primary-foreground: #1A1816;
+  --sidebar-accent: #2D2A28;
+  --sidebar-accent-foreground: #FAF7F2;
+  --sidebar-border: rgba(250, 247, 242, 0.1);
+  --sidebar-ring: #E89A84;
 }
 
 @layer base {
@@ -121,5 +183,59 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+}
+
+/* ============================================
+   Custom selection highlight
+   ============================================ */
+::selection {
+  background: #E07A5F;
+  color: white;
+}
+
+.dark ::selection {
+  background: #E89A84;
+  color: #1A1816;
+}
+
+/* ============================================
+   Scrollbar styling - Subtle & Warm
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* ============================================
+   Smooth animations
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
 }

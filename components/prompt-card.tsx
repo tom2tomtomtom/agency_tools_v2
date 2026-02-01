@@ -73,9 +73,9 @@ export function PromptCard({ prompt }: PromptCardProps) {
   const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(prompt.prompt.slice(0, 4000))}`;
 
   return (
-    <Card 
+    <Card
       id={prompt.id}
-      className="group transition-all duration-200 hover:shadow-md scroll-mt-20"
+      className="group transition-all duration-200 hover:shadow-md scroll-mt-20 border-border/50 rounded-xl overflow-hidden"
     >
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CardHeader className="pb-3">
