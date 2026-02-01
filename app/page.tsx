@@ -2,6 +2,7 @@ import { teams, prompts } from '@/lib/prompts';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { RecentlyUsed } from '@/components/recently-used';
 import Link from 'next/link';
 import { ArrowRight, Sparkles, Zap, Users, FileText, Download, Monitor, Globe, Image, Puzzle } from 'lucide-react';
 
@@ -64,6 +65,9 @@ export default function HomePage() {
           </Button>
         </CardContent>
       </Card>
+
+      {/* Recently Copied - client component, renders only if has items */}
+      <RecentlyUsed />
 
       {/* Quick Start */}
       <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-background">

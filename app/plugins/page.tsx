@@ -153,16 +153,22 @@ export default function PluginsPage() {
                   </div>
                 </div>
 
-                {/* Install Button */}
-                <div className="pt-2">
-                  <Button className="w-full" variant="default" asChild>
-                    <a 
+                {/* Install Buttons */}
+                <div className="pt-2 flex gap-2">
+                  <Button className="flex-1" variant="default" asChild>
+                    <a href={`/plugins/${plugin.slug}.zip`} download>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download ZIP
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="icon" asChild>
+                    <a
                       href={`https://github.com/tom2tomtomtom/agency_tools_v2/tree/main/plugins/${plugin.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title="View on GitHub"
                     >
-                      <Download className="mr-2 h-4 w-4" />
-                      View Plugin & Install Instructions
+                      <ExternalLink className="h-4 w-4" />
                     </a>
                   </Button>
                 </div>

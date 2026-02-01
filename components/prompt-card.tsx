@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { useFavorites } from '@/hooks/use-favorites';
+import { useRecentlyUsed } from '@/hooks/use-recently-used';
 import { useAnalytics } from '@/hooks/use-analytics';
 import {
   ChevronDown,
@@ -51,12 +52,15 @@ export function PromptCard({ prompt }: PromptCardProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const { toggleFavorite, isFavorite } = useFavorites();
+  const { addRecentlyUsed } = useRecentlyUsed();
   const { track } = useAnalytics();
   const favorited = isFavorite(prompt.id);
 
-  const handleCopy = async () => {
+  const handleCopy = async (e?: React.MouseEvent) => {
+    e?.stopPropagation();
     await navigator.clipboard.writeText(prompt.prompt);
     setCopied(true);
+    addRecentlyUsed(prompt.id);
     track({ type: 'prompt_copy', promptId: prompt.id, teamSlug: prompt.teamSlug });
     setTimeout(() => setCopied(false), 2000);
   };
@@ -86,7 +90,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
                 </CardDescription>
               )}
             </div>
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center gap-1.5 shrink-0">
               <Button
                 variant="ghost"
                 size="icon"
@@ -99,19 +103,33 @@ export function PromptCard({ prompt }: PromptCardProps) {
                   }`}
                 />
               </Button>
+              {/* Quick copy button - always visible */}
+              <Button
+                variant={copied ? "default" : "secondary"}
+                size="sm"
+                className="gap-1.5 h-8"
+                onClick={handleCopy}
+              >
+                {copied ? (
+                  <>
+                    <Check className="h-3.5 w-3.5" />
+                    <span className="hidden sm:inline">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="h-3.5 w-3.5" />
+                    <span className="hidden sm:inline">Copy</span>
+                  </>
+                )}
+              </Button>
               <CollapsibleTrigger asChild>
-                <Button variant="outline" size="sm" className="gap-1">
+                <Button variant="outline" size="sm" className="gap-1 h-8">
                   {isOpen ? (
-                    <>
-                      <ChevronUp className="h-4 w-4" />
-                      Collapse
-                    </>
+                    <ChevronUp className="h-4 w-4" />
                   ) : (
-                    <>
-                      <ChevronDown className="h-4 w-4" />
-                      Expand
-                    </>
+                    <ChevronDown className="h-4 w-4" />
                   )}
+                  <span className="hidden sm:inline">{isOpen ? 'Less' : 'More'}</span>
                 </Button>
               </CollapsibleTrigger>
             </div>
