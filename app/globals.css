@@ -38,23 +38,80 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
 
-  /* Redbaez Warm - Custom radius scale */
-  --radius-sm: 8px;
-  --radius-md: 10px;
+  /* ========================================
+     SPACING TOKENS - 8px Grid
+     ======================================== */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ========================================
+     RADIUS TOKENS
+     ======================================== */
+  --radius-none: 0;
+  --radius-sm: 6px;
+  --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
-  --radius-2xl: 20px;
-  --radius-3xl: 24px;
-  --radius-4xl: 32px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+  --radius-full: 9999px;
 
-  /* Redbaez Warm - Custom shadows */
-  --shadow-soft: 0 2px 8px rgba(45, 52, 54, 0.08);
-  --shadow-medium: 0 4px 16px rgba(45, 52, 54, 0.12);
-  --shadow-large: 0 8px 32px rgba(45, 52, 54, 0.16);
+  /* ========================================
+     SHADOW TOKENS
+     ======================================== */
+  --shadow-xs: 0 1px 2px rgba(45, 52, 54, 0.05);
+  --shadow-sm: 0 2px 4px rgba(45, 52, 54, 0.06);
+  --shadow-md: 0 4px 8px rgba(45, 52, 54, 0.08);
+  --shadow-lg: 0 8px 16px rgba(45, 52, 54, 0.1);
+  --shadow-xl: 0 16px 32px rgba(45, 52, 54, 0.12);
+  --shadow-2xl: 0 24px 48px rgba(45, 52, 54, 0.16);
+  --shadow-inner: inset 0 2px 4px rgba(45, 52, 54, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(224, 122, 95, 0.25);
+  --shadow-glow: 0 0 24px rgba(224, 122, 95, 0.15);
+
+  /* ========================================
+     Z-INDEX SCALE
+     ======================================== */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+  --z-max: 9999;
+
+  /* ========================================
+     MOTION TOKENS
+     ======================================== */
+  --duration-instant: 0ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* ============================================
-   REDBAEZ WARM - Light Mode (Default)
+   REDBAEZ WARM v2.0 - Light Mode (Default)
    Warm, friendly, approachable
    ============================================ */
 :root {
@@ -75,6 +132,8 @@
   /* Terra Cotta - Primary brand color */
   --primary: #E07A5F;
   --primary-foreground: #FFFFFF;
+  --primary-hover: #C96B52;
+  --primary-active: #B35D47;
 
   /* Warm sand - Secondary */
   --secondary: #F5F0E8;
@@ -84,19 +143,31 @@
   --muted: #FAF7F2;
   --muted-foreground: #636E72;
 
-  /* Accent - Clay rich */
+  /* Accent - Ochre warm */
   --accent: #F5F0E8;
   --accent-foreground: #2D3436;
 
-  /* Destructive stays warm red */
+  /* Semantic colors */
   --destructive: #E07A5F;
+  --success: #8AB17D;
+  --warning: #F4A261;
+  --info: #A8DADC;
 
   /* Borders and inputs - Sand deep */
   --border: #E8E2D9;
+  --border-subtle: rgba(232, 226, 217, 0.5);
+  --border-strong: #D4CCC2;
   --input: #E8E2D9;
 
   /* Focus ring - Terra cotta */
   --ring: #E07A5F;
+
+  /* Text colors */
+  --text-primary: #2D3436;
+  --text-secondary: #636E72;
+  --text-tertiary: #95A5A6;
+  --text-disabled: #BDC3C7;
+  --text-link: #BC6C25;
 
   /* Charts - Warm palette */
   --chart-1: #E07A5F;
@@ -117,47 +188,61 @@
 }
 
 /* ============================================
-   REDBAEZ WARM - Dark Mode
-   Still warm, but darker tones
+   REDBAEZ WARM v2.0 - Dark Mode
+   Warm undertones, not cold gray/blue
    ============================================ */
 .dark {
   /* Deep warm backgrounds */
-  --background: #1A1816;
-  --foreground: #FAF7F2;
+  --background: #1A1D1E;
+  --foreground: #F5F0E8;
 
   /* Card backgrounds - slightly lighter */
-  --card: #242220;
-  --card-foreground: #FAF7F2;
+  --card: #242729;
+  --card-foreground: #F5F0E8;
 
   /* Popover */
-  --popover: #242220;
-  --popover-foreground: #FAF7F2;
+  --popover: #242729;
+  --popover-foreground: #F5F0E8;
 
   /* Terra Cotta - slightly brighter for dark mode */
   --primary: #E89A84;
-  --primary-foreground: #1A1816;
+  --primary-foreground: #1A1D1E;
+  --primary-hover: #D17A64;
+  --primary-active: #C06A54;
 
   /* Dark sand */
-  --secondary: #2D2A28;
-  --secondary-foreground: #FAF7F2;
+  --secondary: #2E3234;
+  --secondary-foreground: #F5F0E8;
 
   /* Muted dark tones */
-  --muted: #2D2A28;
-  --muted-foreground: #95A5A6;
+  --muted: #2E3234;
+  --muted-foreground: #A8ADB0;
 
   /* Accent */
-  --accent: #2D2A28;
-  --accent-foreground: #FAF7F2;
+  --accent: #2E3234;
+  --accent-foreground: #F5F0E8;
 
-  /* Destructive */
+  /* Semantic colors - brighter for dark */
   --destructive: #E89A84;
+  --success: #9DC490;
+  --warning: #F5B070;
+  --info: #7FCAD0;
 
   /* Borders - warm dark */
-  --border: rgba(250, 247, 242, 0.1);
-  --input: rgba(250, 247, 242, 0.15);
+  --border: #3A3F42;
+  --border-subtle: rgba(58, 63, 66, 0.5);
+  --border-strong: #4A5054;
+  --input: #3A3F42;
 
   /* Ring */
   --ring: #E89A84;
+
+  /* Text colors */
+  --text-primary: #F5F0E8;
+  --text-secondary: #A8ADB0;
+  --text-tertiary: #6B7275;
+  --text-disabled: #4A5054;
+  --text-link: #D4884A;
 
   /* Charts - Warm palette adjusted for dark */
   --chart-1: #E89A84;
@@ -167,42 +252,103 @@
   --chart-5: #AC99C8;
 
   /* Sidebar - Dark warm tones */
-  --sidebar: #242220;
-  --sidebar-foreground: #FAF7F2;
+  --sidebar: #242729;
+  --sidebar-foreground: #F5F0E8;
   --sidebar-primary: #E89A84;
-  --sidebar-primary-foreground: #1A1816;
-  --sidebar-accent: #2D2A28;
-  --sidebar-accent-foreground: #FAF7F2;
-  --sidebar-border: rgba(250, 247, 242, 0.1);
+  --sidebar-primary-foreground: #1A1D1E;
+  --sidebar-accent: #2E3234;
+  --sidebar-accent-foreground: #F5F0E8;
+  --sidebar-border: #3A3F42;
   --sidebar-ring: #E89A84;
+
+  /* Dark mode shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4);
+  --shadow-2xl: 0 24px 48px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px rgba(232, 144, 122, 0.2);
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
+  /* Global focus reset */
+  *:focus {
+    outline: none;
+  }
+
+  /* Visible focus for keyboard users (WCAG 2.4.7) */
+  *:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color var(--duration-slow) var(--ease-out),
+                color var(--duration-slow) var(--ease-out);
   }
+}
+
+/* ============================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Skip Link
+   ============================================ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: var(--z-max);
+  padding: var(--space-3) var(--space-4);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 500;
+  border-radius: var(--radius-lg);
+  transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+  left: var(--space-4);
 }
 
 /* ============================================
    Custom selection highlight
    ============================================ */
 ::selection {
-  background: #E07A5F;
+  background: var(--primary);
   color: white;
 }
 
 .dark ::selection {
-  background: #E89A84;
-  color: #1A1816;
+  background: var(--primary);
+  color: var(--background);
 }
 
 /* ============================================
@@ -219,7 +365,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -227,12 +373,17 @@
 }
 
 /* ============================================
-   Smooth animations
+   ANIMATION KEYFRAMES
    ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -240,6 +391,125 @@
   }
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* ============================================
+   ANIMATION UTILITY CLASSES
+   ============================================ */
+.animate-fade-in {
+  animation: fadeIn var(--duration-normal) var(--ease-out);
+}
+
 .animate-fade-in-up {
-  animation: fadeInUp 0.4s ease-out forwards;
+  animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown var(--duration-slow) var(--ease-out) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn var(--duration-normal) var(--ease-out);
+}
+
+.animate-slide-in-right {
+  animation: slideInRight var(--duration-slow) var(--ease-out);
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft var(--duration-slow) var(--ease-out);
+}
+
+.animate-pulse {
+  animation: pulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s var(--ease-linear) infinite;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Stagger children animations */
+.stagger > * {
+  opacity: 0;
+  animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 100ms; }
+.stagger > *:nth-child(3) { animation-delay: 200ms; }
+.stagger > *:nth-child(4) { animation-delay: 300ms; }
+.stagger > *:nth-child(5) { animation-delay: 400ms; }
+.stagger > *:nth-child(6) { animation-delay: 500ms; }
+
+/* ============================================
+   FOCUS RING UTILITY
+   ============================================ */
+.focus-ring:focus-visible {
+  box-shadow: var(--shadow-focus);
 }

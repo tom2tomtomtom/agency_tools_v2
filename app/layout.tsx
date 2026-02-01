@@ -30,6 +30,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* Accessibility: Skip to main content link */}
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
           <div className="flex min-h-screen">
             <Sidebar />
             <main className="flex-1 ml-0 md:ml-64">
@@ -44,9 +48,9 @@ export default function RootLayout({
                   </div>
                 </div>
               </header>
-              <div className="p-4 md:p-6">
+              <main id="main-content" tabIndex={-1} className="p-4 md:p-6 outline-none">
                 {children}
-              </div>
+              </main>
             </main>
           </div>
           <ChatWidget />
