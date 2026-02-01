@@ -12,7 +12,7 @@ const plugins = [
     description: 'Turn Claude into your crisis response expert. Get instant help with response plans, stakeholder messaging, and media management during critical situations.',
     commands: ['/crisis-response', '/stakeholder-update', '/media-statement'],
     useCases: ['Breaking news response', 'Stakeholder communication', 'Media statements'],
-    color: 'bg-red-50 border-red-200',
+    color: 'bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-900/50',
   },
   {
     slug: 'media-relations',
@@ -21,7 +21,7 @@ const plugins = [
     description: 'Your PR expert in Claude. Get help writing press releases, crafting pitches that journalists actually open, and analyzing your media coverage.',
     commands: ['/press-release', '/media-pitch', '/coverage-analysis'],
     useCases: ['Product announcements', 'Journalist outreach', 'Coverage reporting'],
-    color: 'bg-blue-50 border-blue-200',
+    color: 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-900/50',
   },
   {
     slug: 'brand-strategy',
@@ -30,7 +30,7 @@ const plugins = [
     description: 'Your brand strategist in Claude. Get help with positioning, competitive analysis, and messaging frameworks that actually differentiate.',
     commands: ['/positioning', '/competitor-analysis', '/messaging-framework'],
     useCases: ['Brand positioning', 'Competitive analysis', 'Messaging development'],
-    color: 'bg-purple-50 border-purple-200',
+    color: 'bg-purple-50 dark:bg-purple-950/30 border-purple-200 dark:border-purple-900/50',
   },
   {
     slug: 'social-content',
@@ -39,7 +39,7 @@ const plugins = [
     description: 'Your content strategist in Claude. Get help creating social posts, planning content calendars, and developing content that actually engages.',
     commands: ['/social-posts', '/content-calendar', '/blog-outline'],
     useCases: ['Social media content', 'Editorial planning', 'Blog writing'],
-    color: 'bg-green-50 border-green-200',
+    color: 'bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-900/50',
   },
   {
     slug: 'client-experience',
@@ -48,7 +48,7 @@ const plugins = [
     description: 'Your account management partner in Claude. Get help with meeting notes, proposals, and keeping client relationships healthy.',
     commands: ['/meeting-notes', '/proposal-builder', '/client-health'],
     useCases: ['Meeting summaries', 'Proposal development', 'Account health'],
-    color: 'bg-orange-50 border-orange-200',
+    color: 'bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-900/50',
   },
   {
     slug: 'campaign-management',
@@ -57,7 +57,7 @@ const plugins = [
     description: 'Your project management partner in Claude. Get help with timelines, status reports, and keeping campaigns running smoothly.',
     commands: ['/project-plan', '/status-report', '/change-impact'],
     useCases: ['Project planning', 'Status reporting', 'Scope management'],
-    color: 'bg-teal-50 border-teal-200',
+    color: 'bg-teal-50 dark:bg-teal-950/30 border-teal-200 dark:border-teal-900/50',
   },
 ];
 
