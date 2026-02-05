@@ -6,8 +6,19 @@ import { useRecentlyUsed } from '@/hooks/use-recently-used';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+} from '@/components/ui/dialog';
 import { Clock, Copy, Check, X } from 'lucide-react';
 import { useState } from 'react';
+import { toast } from 'sonner';
 
 export function RecentlyUsed() {
   const { recentlyUsed, clearRecentlyUsed, isLoaded } = useRecentlyUsed();
@@ -20,9 +31,13 @@ export function RecentlyUsed() {
       .slice(0, 4);
   }, [recentlyUsed]);
 
-  const handleCopy = async (promptId: string, promptText: string) => {
+  const handleCopy = async (promptId: string, promptText: string, promptName: string) => {
     await navigator.clipboard.writeText(promptText);
     setCopiedId(promptId);
+    toast.success('Copied to clipboard', {
+      description: promptName,
+      duration: 2000,
+    });
     setTimeout(() => setCopiedId(null), 2000);
   };
 
@@ -39,15 +54,42 @@ export function RecentlyUsed() {
             <Clock className="h-5 w-5 text-amber-600" />
             Recently Copied
           </CardTitle>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="h-7 text-xs text-muted-foreground hover:text-foreground"
-            onClick={clearRecentlyUsed}
-          >
-            <X className="h-3 w-3 mr-1" />
-            Clear
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-7 text-xs text-muted-foreground hover:text-foreground"
+              >
+                <X className="h-3 w-3 mr-1" />
+                Clear
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Clear recent items?</DialogTitle>
+                <DialogDescription>
+                  This will remove all {recentPrompts.length} recently copied prompts from your history. This action cannot be undone.
+                </DialogDescription>
+              </DialogHeader>
+              <DialogFooter className="gap-2 sm:gap-0">
+                <DialogClose asChild>
+                  <Button variant="outline">Cancel</Button>
+                </DialogClose>
+                <DialogClose asChild>
+                  <Button
+                    variant="destructive"
+                    onClick={() => {
+                      clearRecentlyUsed();
+                      toast.success('Cleared recent items');
+                    }}
+                  >
+                    Clear all
+                  </Button>
+                </DialogClose>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
         </div>
       </CardHeader>
       <CardContent>
@@ -67,7 +109,7 @@ export function RecentlyUsed() {
                 variant={copiedId === prompt.id ? "default" : "secondary"}
                 size="sm"
                 className="shrink-0 h-8 w-8 p-0"
-                onClick={() => handleCopy(prompt.id, prompt.prompt)}
+                onClick={() => handleCopy(prompt.id, prompt.prompt, prompt.name)}
               >
                 {copiedId === prompt.id ? (
                   <Check className="h-3.5 w-3.5" />

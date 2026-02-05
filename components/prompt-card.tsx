@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { toast } from 'sonner';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -62,6 +63,10 @@ export function PromptCard({ prompt }: PromptCardProps) {
     setCopied(true);
     addRecentlyUsed(prompt.id);
     track({ type: 'prompt_copy', promptId: prompt.id, teamSlug: prompt.teamSlug });
+    toast.success('Copied to clipboard', {
+      description: prompt.name,
+      duration: 2000,
+    });
     setTimeout(() => setCopied(false), 2000);
   };
 
