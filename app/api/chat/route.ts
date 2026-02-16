@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
           model: 'claude-3-5-haiku-latest',
-          max_tokens: 1500,
+          max_tokens: 1024,
           system: systemPrompt,
           messages: messages.map(m => ({
             role: m.role,
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
           model: 'sonar',
-          max_tokens: 1500,
+          max_tokens: 1024,
           messages: [
             { role: 'system', content: systemPrompt },
             ...messages.map(m => ({
